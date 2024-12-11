@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;         /*todo dentro*/
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5em;
+}
+
+header {
+    width: 100%;
+    background: #1B4F72;
+    color: #ffffff;
+    padding: 0.8em;
+    text-transform: uppercase;
+}
+
+h1 {
+    text-align: center;
+}
+
+.contenedor-principal {
+    width: 100%;
+    height: 12em;
+    padding-top: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-principal .encendido {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    margin-left: 0.4em;
+}
+
+.contenedor-principal .encendido .btn-enc {
+    margin: auto auto;
+    width: 90%;
+    height: 100%;
+}
+
+.contenedor-principal .camara {
+    display: flex;
+    border: 2px solid #4B718A;
+    border-radius: 0.5em;
+    width: 60%;
+    padding: 0.1em;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor-principal .camara .video {
+    width: 360px;
+    height: 240px;
+    border-radius: 0.5em;
+    margin: auto;
+}
+
+/* .contenedor-principal .camara .video canvas {
+    position: absolute;
+    top: 0;
+    left; 0;
+} */
+
+.contenedor-principal .camara .controller {
+    align-self: flex-end;
+    width: 100%;
+}
+
+.contenedor-principal .camara .controller button {
+    width: 100%;
+    border-radius: 0 0 0.5em 0.5em;
+}
+
+.contenedor-principal .modos {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    margin-right: 0.4em;
+}
+
+.contenedor-principal .modos .modo {
+    height: 50%;
+}
+
+.contenedor-principal .modos .btn-modo1 {
+    display: block;
+    width: 90%;
+    height: 97.5%;
+    float: right;
+    /* border-radius: 0.5em 0.5em 0 0; */
+}
+
+.contenedor-principal .modos .btn-modo2 {
+    display: block;
+    width: 90%;
+    height: 97.5%;
+    float: right;
+    /* border-radius: 0 0 0.5em 0.5em; */
+}
+
+.contenedor-principal button {
+    background-color: #4B718A;
+    color: white;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.contenedor-principal button:hover {
+    background-color: #1B4F72;
+}
+
+.contenedor-control {
+    width: 100%;
+    height: 12em;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-control .control {
+    flex-wrap: wrap;
+    flex: 33%;
+    margin: 0.4em;
+    border: 2px solid #1B4F72;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #1B4F72;
+    margin-bottom: 5%;
+}
+
+.control-desplazamiento {
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.btn {
+    width: 30%;
+    height: 30%;
+    background-color: #4B718A;
+    position: absolute;
+    border-radius: 5%;
+    /* top: 1em;
+    left: 1em; */
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 10%;
+}
+
+img {
+    width: 40%;
+}
+
+.btn:hover {
+    background-color: #34495E;
+}
+
+.btn.izquierda {
+    /* background-image: url('/img/izquierda.png'); */
+    left: 5%;
+    top: 30%;
+}
+
+.btn.derecha {
+    right: 5%;
+    top: 30%;
+}
+
+.btn.adelante {
+    top: 0%;
+    left: 35%
+}
+
+.btn.atras {
+    top: 60%;
+    left: 35%
+}
+
+.sliders label {
+    display: inline-block;
+    width: 30%;
+}
+
+.sliders input[type="range"] {
+    display: inline-block;
+    width: 59%;
+    accent-color: #4B718A;
+}
+
+.sliders p {
+    display: inline-block;
+    font-size: 0.7em;
+    width: 6%;
+}
